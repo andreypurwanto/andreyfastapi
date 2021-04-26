@@ -271,7 +271,7 @@ def read_item():
     return {'1':'/selisih/','2':'/pilihdata/'}
   
 @app.get("/selisih/")
-async def selisih(initialdate: str = '20200325', enddate: str = '20200603', kecamatan_: str = 'all', sort_by: str = '0', ascending_: str = '1', top_rank: str = "10"):
+async def selisih(initialdate: str = '20200325', enddate: str = '20200603', kecamatan_: str = 'all', sort_by: str = '1', ascending_: str = '0', top_rank: str = "10"):
     """
     return analysis with differences between initial and end date with parameters of : initialdate, enddate, kecamatan_, sort_by, ascending_, top_rank
     """
