@@ -27,7 +27,7 @@ list of kecamatan : </br>
  ex : CAKUNG,TEBET,PESANGGRAHAN
 - return column same as data input, but only sliced between parameters
 - return example </br>
-    - `/pilihdata/?initialdate=20200330&enddate=20200330&kecamatan_=CAKUNG%2CTEBET%2CPESANGGRAHAN`
+    - `/pilihdata/?initialdate=20200330&enddate=20200330&kecamatan_=CAKUNG%2CTEBET%2CPESANGGRAHAN` </br>
     - `{
   "query": {
     "kecamatan": "CAKUNG,TEBET,PESANGGRAHAN",
