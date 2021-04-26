@@ -265,26 +265,15 @@ def difference(df,kecamatan,sort_by,ascending_,top_rank):
         print(e)
         return {'status' : 412, 'message' : 'invalid input'}
 
-
+@app.get("/")
+def read_item():
+    """return active endpoint"""
+    return {'1':'/selisih/','2':'/pilihdata/'}
+  
 @app.get("/selisih/")
-async def read_item(initialdate: str = '20200101', enddate: str = '20201212', kecamatan_: str = 'all', sort_by: str = '0', ascending_: str = '1', top_rank: str = "10"):
+async def selisih(initialdate: str = '20200101', enddate: str = '20201212', kecamatan_: str = 'all', sort_by: str = '0', ascending_: str = '1', top_rank: str = "10"):
     """
-    arguments
-    initialdate: str 
-    = '20200101' -> 'yyyymmdd'
-    enddate: str = 
-    '20201212'  -> 'yyyymmdd'
-    kecamatan_: str 
-    = 'all' -> option in readme
-    sort_by: 
-    str = 0 -> option in readme 
-    ascending_: 
-    str = 0 -> option in readme
-    top_rank: 
-    str = 2 -> option in readme
-
-    return example:
-    in readme
+    return analysis with differences between initial and end date with parameters of : initialdate, enddate, kecamatan_, sort_by, ascending_, top_rank
     """
     return_read_csv = read_all_csv()
     if return_read_csv['status'] == 200:
@@ -312,18 +301,9 @@ async def read_item(initialdate: str = '20200101', enddate: str = '20201212', ke
         )
 
 @app.get("/pilihdata/")
-async def read_item(initialdate: str = '20200101', enddate: str = '20201212', kecamatan_: str = 'all'):
+async def pilihdata(initialdate: str = '20200101', enddate: str = '20201212', kecamatan_: str = 'all'):
     """
-    arguments
-    initialdate: str 
-    = '20200101' -> 'yyyymmdd'
-    enddate: str = 
-    '20201212'  -> 'yyyymmdd'
-    kecamatan_: str 
-    = 'all' -> option in readme
-
-    return example:
-    in readme
+    return sliced data with parameters of : initialdate, enddate, kecamatan_
     """
     return_read_csv = read_all_csv()
     if return_read_csv['status'] == 200:
