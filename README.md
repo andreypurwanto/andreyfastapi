@@ -31,7 +31,7 @@ list of kecamatan : </br>
  ex : CAKUNG,TEBET,PESANGGRAHAN
 - return column same as data input, but only sliced between parameters
 - return example </br>
-    - `https://andreyfastapi.herokuapp.com/pilihdata/?initialdate=20200330&enddate=20200330&kecamatan_=CAKUNG%2CTEBET%2CPESANGGRAHAN` </br>
+    - https://andreyfastapi.herokuapp.com/pilihdata/?initialdate=20200330&enddate=20200330&kecamatan_=CAKUNG%2CTEBET%2CPESANGGRAHAN </br>
     - `{
   "query": {
     "kecamatan": "CAKUNG,TEBET,PESANGGRAHAN",
@@ -127,7 +127,7 @@ list of kecamatan : </br>
      }</br>
 
 - return example
-    - `https://andreyfastapi.herokuapp.com/selisih/?initialdate=20200401&enddate=20200501&kecamatan_=all&sort_by=1&ascending_=0&top_rank=3`
+    - https://andreyfastapi.herokuapp.com/selisih/?initialdate=20200401&enddate=20200501&kecamatan_=all&sort_by=1&ascending_=0&top_rank=3
     - `{
   "query": {
     "tanggal_awal": "2020-04-01 00:00:00",
