@@ -9,6 +9,7 @@
   "2": "/pilihdata/"
 }`
 </br>
+
 2. /pilihdata/ : return slice data input </br>
 - parameters : </br>
     - initialdate (str) : "yyyymmdd"
