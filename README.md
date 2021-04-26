@@ -1,5 +1,8 @@
 # andreyfastapi
 
+## Heroku
+https://andreyfastapi.herokuapp.com/ </br>
+https://andreyfastapi.herokuapp.com/docs/ </br>
 
 ## Endpoint
 1. / : return active endpoint </br>
