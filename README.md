@@ -82,7 +82,8 @@ list of kecamatan : </br>
     }
   }
 }`
-
+</br>
+</br>
 3. /selisih/ : return analysis of difference and rate of positif case, difference and rate of 'sembuh' case and difference and rate of 'meninggal' case  with differences between initial and end date sliced by parameters of : initialdate, enddate, kecamatan_, sort_by, ascending_, top_rank </br>
 - parameters : </br>
     - initialdate (str) : "yyyymmdd" default 20200101
