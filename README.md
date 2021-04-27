@@ -127,6 +127,15 @@ list of kecamatan : </br>
      ... 
      }`</br>
 
+- data columns  </br>
+"kecamatan": kecamatan x </br>
+"positif_selisih_nilai": difference positif value between end date and initial date </br> 
+"positif_selisih_persentase": rate positif value between end date and initial date </br>
+"sembuh_selisih_nilai": difference 'sembuh' value between end date and initial date </br>
+"sembuh_selisih_persentase": rate 'sembuh' value between end date and initial date </br>
+"meninggal_selisih_nilai": difference 'meninggal' value between end date and initial date </br>
+"meninggal_selisih_persentase": rate 'meninggal' value between end date and initial date </br>
+
 - return example
     - https://andreyfastapi.herokuapp.com/selisih/?initialdate=20200401&enddate=20200501&kecamatan_=all&sort_by=1&ascending_=0&top_rank=3
     - `{
