@@ -14,7 +14,7 @@ https://andreyfastapi.herokuapp.com/docs/ </br>
 </br>
 
 2. /pilihdata/ : return slice data input </br>
-- parameters : </br>
+- input parameters : </br>
     - initialdate (str) : "yyyymmdd" default 20200401
     - enddate (str) : "yyyymmdd" default 20200401
     - kecamatan_ : 'all' for all list, or sliced by comma </br>
@@ -91,7 +91,7 @@ list of kecamatan : </br>
 
 3. /selisih/ : return analysis of difference and rate of positif case, difference and rate of 'sembuh' case and difference and rate of 'meninggal' case  with differences between initial and end date sliced by parameters of : initialdate, enddate, kecamatan_, sort_by, ascending_, top_rank </br>
 
-- parameters : </br>
+- input parameters : </br>
     - initialdate (str) : "yyyymmdd" default 20200325
     - enddate (str) : "yyyymmdd" default 20200603
     - kecamatan_ (str): 'all' for all list, or sliced by comma, same as above, default all </br>
