@@ -178,5 +178,10 @@ list of kecamatan : </br>
   }
 }`
 
+## Errors
+
+- 400 : Missing data sources. </br>
+- 412 : Invalid input. </br>
+
 ## Data Used
 https://data.go.id/dataset/data-odp-pdp-dan-positif-covid-19-dki-jakarta-per-kecamatan </br>
